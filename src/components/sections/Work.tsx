@@ -34,7 +34,7 @@ export default async function Work() {
   const t = await getTranslations("work");
 
   return (
-    <section id="work" className="scroll-mt-24 bg-[#25D366]">
+    <section id="work" className="scroll-mt-24 bg-accent">
       <div className="mx-auto max-w-6xl px-6 py-24">
         <Reveal>
           <h2 className="max-w-2xl font-display text-3xl font-bold tracking-tight text-accent-ink md:text-5xl">
