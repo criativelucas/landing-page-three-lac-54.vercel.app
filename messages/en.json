@@ -1,0 +1,194 @@
+{
+  "meta": {
+    "title": "Websites That Think | AI-Powered Websites in 72 Hours",
+    "description": "Conversion-engineered websites, designed, written and shipped in 72 hours. Built with AI. Perfected by a human."
+  },
+  "nav": {
+    "work": "Work",
+    "pricing": "Pricing",
+    "process": "Process",
+    "cta": "Start your project",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "hero": {
+    "dragToRotate": "↔ DRAG TO ROTATE",
+    "badge": "⚡ AVG. DELIVERY: 3 DAYS",
+    "eyebrow": "AI-POWERED WEB STUDIO",
+    "headline": "Websites that think.",
+    "description": "Conversion-engineered websites, designed, written and shipped in <strong>72 hours</strong>. Built with AI. Perfected by a human.",
+    "primaryCta": "Get your site in 72h",
+    "secondaryCta": "See the work",
+    "microcopy": "No calls required to get a quote. Reply within 2 hours, same day."
+  },
+  "socialProof": {
+    "foundingClients": "🚀 FOUNDING CLIENTS GET 20% OFF",
+    "slotsLeft": "{count} SLOTS LEFT THIS MONTH",
+    "regions": "US · UK · CANADA · AUSTRALIA"
+  },
+  "problem": {
+    "heading": "Your website is either working, or it's costing you customers.",
+    "subheading": "75% of people judge a business by its website in under 3 seconds. If yours is slow, outdated or built from a template, they're already calling your competitor.",
+    "items": {
+      "speed": "Slow load = 53% of visitors gone before it opens",
+      "mobile": "Not mobile-first = invisible to half your market",
+      "cta": "No clear call-to-action = traffic that never converts"
+    }
+  },
+  "pricing": {
+    "heading": "One flat price. Zero surprises.",
+    "subheading": "Live in days, not months.",
+    "mostPopular": "Most popular",
+    "agencyQuoteLabel": "Agency quote: {price}",
+    "includesNote": "Every plan includes: mobile-first design · SSL · lightning-fast hosting · 2 revision rounds · you own everything.",
+    "carePlan": {
+      "title": "⚡ Care Plan: from $49/mo",
+      "description": "Hosting, edits & support after launch. Cancel anytime.",
+      "cta": "Add to my project"
+    },
+    "plans": {
+      "launch": {
+        "name": "Launch",
+        "price": "$497",
+        "tagline": "High-converting one-pager",
+        "cta": "Start with Launch",
+        "features": ["72h delivery", "Copywriting included", "Mobile-first design"]
+      },
+      "business": {
+        "name": "Business",
+        "price": "$997",
+        "agencyQuote": "$3,000-5,000",
+        "tagline": "Full 5-page website",
+        "cta": "Get Business",
+        "features": ["7-day delivery", "Copy + local SEO + analytics", "Mobile-first design"]
+      },
+      "growth": {
+        "name": "Growth",
+        "price": "$1,997",
+        "tagline": "Website + growth engine",
+        "cta": "Scale with Growth",
+        "features": ["10-day delivery", "Everything in Business", "Blog, email & lead automation"]
+      }
+    }
+  },
+  "process": {
+    "heading": "From brief to live in 72 hours. Here's how.",
+    "steps": {
+      "brief": {
+        "title": "Brief",
+        "when": "Day 0",
+        "text": "You fill a 10-minute form. That's all we need to start."
+      },
+      "build": {
+        "title": "Build",
+        "when": "Day 1-2",
+        "text": "AI-accelerated design & copy, refined by hand. You get a private preview link."
+      },
+      "launch": {
+        "title": "Launch",
+        "when": "Day 3",
+        "text": "You approve, we ship. Your site is live, fast, and ready to sell."
+      }
+    },
+    "footnote": "You approve everything before the final payment. Zero risk."
+  },
+  "work": {
+    "heading": "Built to convert. Designed to impress.",
+    "featured": {
+      "ariaLabel": "Photographer Efraim Gomes: view live site (opens in new tab)",
+      "heroAlt": "Efraim Gomes photography site, desktop view",
+      "mobileLabel": "MOBILE",
+      "mobileAlt": "Efraim Gomes photography site, mobile view",
+      "niche": "Photographer: Efraim Gomes",
+      "caption": "Real client project with a masonry gallery, parallax and lightbox",
+      "viewSite": "View site ↗"
+    },
+    "conceptTag": "CONCEPT",
+    "typicalForNiche": "typical for this niche",
+    "cases": {
+      "dental": { "niche": "Dental Clinic", "stat": "+40%", "caption": "Booking requests" },
+      "contractor": { "niche": "Contractor / Home Services", "stat": "3x", "caption": "Quote requests" },
+      "trainer": { "niche": "Personal Trainer", "stat": "+55%", "caption": "Trial signups" },
+      "law": { "niche": "Law Firm", "stat": "+28%", "caption": "Consult bookings" }
+    },
+    "cta": "Want results like these? Start your project"
+  },
+  "testimonials": {
+    "quotes": {
+      "clinic": {
+        "quote": "I expected a template. I got a website better than agencies quoted me $5,000 for, and in three days.",
+        "name": "Founding client",
+        "role": "Clinic Owner, Austin TX"
+      },
+      "contractor": {
+        "quote": "Same-day replies, no back-and-forth. The site was live before I finished comparing other quotes.",
+        "name": "Founding client",
+        "role": "Contractor, Manchester UK"
+      }
+    }
+  },
+  "guarantee": {
+    "heading": "Live in 72 hours. <accent>Or 20% off.</accent> Guaranteed.",
+    "body": "We control the process end-to-end, so we can promise what agencies can't: your deadline is our deadline. Miss it, and you get 20% back. No fine print."
+  },
+  "faq": {
+    "heading": "Questions, answered.",
+    "items": {
+      "delivery": {
+        "q": "How can you deliver in 72 hours?",
+        "a": "AI handles the heavy lifting (drafts, variations, boilerplate). A human designer perfects every pixel and word. You get agency quality at startup speed."
+      },
+      "ownership": {
+        "q": "Do I own the website?",
+        "a": "100%. Domain, code and content are all yours after final payment."
+      },
+      "revisions": {
+        "q": "What if I don't like it?",
+        "a": "Every plan includes 2 revision rounds, and you approve the preview before paying the balance."
+      },
+      "international": {
+        "q": "I'm not in the US. Does that matter?",
+        "a": "Not at all. We work with clients in 4 countries, async-first, with same-day responses."
+      },
+      "requirements": {
+        "q": "What do you need from me?",
+        "a": "10 minutes on a form. Logo and photos help, but we can work without them."
+      },
+      "payments": {
+        "q": "How do payments work?",
+        "a": "50% to lock your slot, 50% on approval. Card via Stripe, protected and simple."
+      }
+    }
+  },
+  "finalCta": {
+    "heading": "Your competitors' websites were built last decade.<accent>Yours launches this week.</accent>",
+    "sending": "Sending…",
+    "submit": "Get my free quote →",
+    "whatsappMessage": "Hi! I just requested a quote on your site.",
+    "success": {
+      "title": "You're in.",
+      "body": "We reply within 2 hours with next steps. No calls needed to get started.",
+      "instantPrompt": "Prefer an instant answer?",
+      "whatsappAriaLabel": "Chat on WhatsApp (opens in new tab)",
+      "whatsappCta": "Chat on WhatsApp"
+    },
+    "fields": {
+      "name": "Name",
+      "email": "Email",
+      "website": "Your current website (optional)"
+    },
+    "errors": {
+      "missingFields": "Name and email are required.",
+      "invalidEmail": "Enter a valid email address.",
+      "success": "Thanks! We'll reply within 2 hours."
+    },
+    "footnote": "Reply within 2 hours · No spam, no pressure · {count} slots left this month"
+  },
+  "footer": {
+    "tagline": "Built in 72 hours. By us, obviously."
+  },
+  "whatsapp": {
+    "defaultMessage": "Hi! I'd like a quote for a website.",
+    "ariaLabel": "Chat on WhatsApp (opens in new tab)"
+  }
+}

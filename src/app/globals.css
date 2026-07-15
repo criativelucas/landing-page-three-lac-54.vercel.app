@@ -1,26 +1,77 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #eaeae7;
+  --foreground: #131313;
+  --muted: #6b6b68;
+  --accent: #e3ff3d;
+  --accent-ink: #131313;
+  --surface: #ffffff;
+  --surface-border: #d8d8d4;
+  --ink: #0a0a0a;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --color-surface: var(--surface);
+  --color-surface-border: var(--surface-border);
+  --color-ink: var(--ink);
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+  --font-pixel: var(--font-mono-pixel);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body), Arial, Helvetica, sans-serif;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Progressive enhancement: animate <details> open/close where supported
+   (ignored harmlessly elsewhere, falling back to an instant toggle). */
+@media (prefers-reduced-motion: no-preference) {
+  details {
+    interpolate-size: allow-keywords;
+  }
+  details::details-content {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.25s ease, content-visibility 0.25s allow-discrete;
+  }
+  details[open]::details-content {
+    height: auto;
+  }
+}
+
+h1,
+h2,
+h3,
+.font-display {
+  font-family: var(--font-display), var(--font-body), sans-serif;
+}
+
+.font-pixel {
+  font-family: var(--font-pixel), monospace;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--accent-ink);
 }

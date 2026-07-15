@@ -1,0 +1,194 @@
+{
+  "meta": {
+    "title": "Sites Que Pensam | Sites com IA em 72 Horas",
+    "description": "Sites projetados para converter, desenhados, escritos e entregues em 72 horas. Feitos com IA. Aperfeiçoados por um humano."
+  },
+  "nav": {
+    "work": "Portfólio",
+    "pricing": "Preços",
+    "process": "Processo",
+    "cta": "Comece seu projeto",
+    "openMenu": "Abrir menu",
+    "closeMenu": "Fechar menu"
+  },
+  "hero": {
+    "dragToRotate": "↔ ARRASTE PARA GIRAR",
+    "badge": "⚡ ENTREGA MÉDIA: 3 DIAS",
+    "eyebrow": "ESTÚDIO WEB COM IA",
+    "headline": "Sites que pensam.",
+    "description": "Sites projetados para converter, desenhados, escritos e entregues em <strong>72 horas</strong>. Feitos com IA. Aperfeiçoados por um humano.",
+    "primaryCta": "Peça seu site em 72h",
+    "secondaryCta": "Ver os trabalhos",
+    "microcopy": "Sem necessidade de ligação para um orçamento. Resposta em até 2 horas, no mesmo dia."
+  },
+  "socialProof": {
+    "foundingClients": "🚀 CLIENTES FUNDADORES GANHAM 20% OFF",
+    "slotsLeft": "{count} VAGAS RESTANTES ESTE MÊS",
+    "regions": "EUA · REINO UNIDO · CANADÁ · AUSTRÁLIA"
+  },
+  "problem": {
+    "heading": "Seu site ou está funcionando, ou está custando clientes.",
+    "subheading": "75% das pessoas julgam um negócio pelo site em menos de 3 segundos. Se o seu é lento, desatualizado ou feito num template, elas já estão ligando pro seu concorrente.",
+    "items": {
+      "speed": "Carregamento lento = 53% dos visitantes somem antes de abrir",
+      "mobile": "Não é mobile-first = invisível pra metade do seu mercado",
+      "cta": "Sem chamada pra ação clara = tráfego que nunca converte"
+    }
+  },
+  "pricing": {
+    "heading": "Um preço fechado. Zero surpresas.",
+    "subheading": "No ar em dias, não em meses.",
+    "mostPopular": "Mais popular",
+    "agencyQuoteLabel": "Orçamento de agência: {price}",
+    "includesNote": "Todos os planos incluem: design mobile-first · SSL · hospedagem ultrarrápida · 2 rodadas de revisão · você é dono de tudo.",
+    "carePlan": {
+      "title": "⚡ Care Plan: a partir de R$ 197/mês",
+      "description": "Hospedagem, edições e suporte após o lançamento. Cancele quando quiser.",
+      "cta": "Adicionar ao meu projeto"
+    },
+    "plans": {
+      "launch": {
+        "name": "Launch",
+        "price": "R$ 1.997",
+        "tagline": "Landing page de alta conversão",
+        "cta": "Começar com Launch",
+        "features": ["Entrega em 72h", "Copywriting incluso", "Design mobile-first"]
+      },
+      "business": {
+        "name": "Business",
+        "price": "R$ 3.997",
+        "agencyQuote": "R$ 12.000-20.000",
+        "tagline": "Site completo de 5 páginas",
+        "cta": "Escolher Business",
+        "features": ["Entrega em 7 dias", "Copy + SEO local + analytics", "Design mobile-first"]
+      },
+      "growth": {
+        "name": "Growth",
+        "price": "R$ 7.997",
+        "tagline": "Site + motor de crescimento",
+        "cta": "Escalar com Growth",
+        "features": ["Entrega em 10 dias", "Tudo do Business", "Blog, e-mail e automação de leads"]
+      }
+    }
+  },
+  "process": {
+    "heading": "Do briefing ao ar em 72 horas. Veja como.",
+    "steps": {
+      "brief": {
+        "title": "Briefing",
+        "when": "Dia 0",
+        "text": "Você preenche um formulário de 10 minutos. Só isso que precisamos pra começar."
+      },
+      "build": {
+        "title": "Construção",
+        "when": "Dia 1-2",
+        "text": "Design e copy acelerados por IA, refinados à mão. Você recebe um link de preview privado."
+      },
+      "launch": {
+        "title": "Lançamento",
+        "when": "Dia 3",
+        "text": "Você aprova, a gente publica. Seu site fica no ar, rápido e pronto pra vender."
+      }
+    },
+    "footnote": "Você aprova tudo antes do pagamento final. Risco zero."
+  },
+  "work": {
+    "heading": "Feito pra converter. Desenhado pra impressionar.",
+    "featured": {
+      "ariaLabel": "Fotógrafo Efraim Gomes: ver site no ar (abre em nova aba)",
+      "heroAlt": "Site do fotógrafo Efraim Gomes, versão desktop",
+      "mobileLabel": "MOBILE",
+      "mobileAlt": "Site do fotógrafo Efraim Gomes, versão mobile",
+      "niche": "Fotógrafo: Efraim Gomes",
+      "caption": "Projeto real de cliente, com galeria em masonry, parallax e lightbox",
+      "viewSite": "Ver site ↗"
+    },
+    "conceptTag": "CONCEITO",
+    "typicalForNiche": "típico para este nicho",
+    "cases": {
+      "dental": { "niche": "Clínica Odontológica", "stat": "+40%", "caption": "Pedidos de agendamento" },
+      "contractor": { "niche": "Prestador de Serviços", "stat": "3x", "caption": "Pedidos de orçamento" },
+      "trainer": { "niche": "Personal Trainer", "stat": "+55%", "caption": "Cadastros de aula experimental" },
+      "law": { "niche": "Escritório de Advocacia", "stat": "+28%", "caption": "Consultas agendadas" }
+    },
+    "cta": "Quer resultados assim? Comece seu projeto"
+  },
+  "testimonials": {
+    "quotes": {
+      "clinic": {
+        "quote": "Eu esperava um template. Recebi um site melhor do que agências cotaram por $5.000, e em três dias.",
+        "name": "Cliente fundador",
+        "role": "Dona de Clínica, Austin TX"
+      },
+      "contractor": {
+        "quote": "Respostas no mesmo dia, sem enrolação. O site já estava no ar antes de eu terminar de comparar outros orçamentos.",
+        "name": "Cliente fundador",
+        "role": "Prestador de Serviços, Manchester UK"
+      }
+    }
+  },
+  "guarantee": {
+    "heading": "No ar em 72 horas. <accent>Ou 20% de volta.</accent> Garantido.",
+    "body": "Controlamos o processo do início ao fim, então podemos prometer o que agências não conseguem: seu prazo é o nosso prazo. Se perdermos, você recebe 20% de volta. Sem letras miúdas."
+  },
+  "faq": {
+    "heading": "Perguntas, respondidas.",
+    "items": {
+      "delivery": {
+        "q": "Como vocês entregam em 72 horas?",
+        "a": "A IA cuida do trabalho pesado (rascunhos, variações, estrutura). Um designer humano aperfeiçoa cada pixel e cada palavra. Você tem qualidade de agência na velocidade de startup."
+      },
+      "ownership": {
+        "q": "O site é meu?",
+        "a": "100%. Domínio, código e conteúdo são todos seus após o pagamento final."
+      },
+      "revisions": {
+        "q": "E se eu não gostar?",
+        "a": "Todos os planos incluem 2 rodadas de revisão, e você aprova o preview antes de pagar o saldo."
+      },
+      "international": {
+        "q": "Não estou nos EUA. Isso importa?",
+        "a": "De jeito nenhum. Trabalhamos com clientes em 4 países, de forma assíncrona, com resposta no mesmo dia."
+      },
+      "requirements": {
+        "q": "O que vocês precisam de mim?",
+        "a": "10 minutos num formulário. Logo e fotos ajudam, mas conseguimos trabalhar sem eles."
+      },
+      "payments": {
+        "q": "Como funciona o pagamento?",
+        "a": "50% para reservar sua vaga, 50% na aprovação. Cartão via Stripe, protegido e simples."
+      }
+    }
+  },
+  "finalCta": {
+    "heading": "Os sites dos seus concorrentes foram feitos na década passada.<accent>O seu estreia essa semana.</accent>",
+    "sending": "Enviando…",
+    "submit": "Pedir meu orçamento grátis →",
+    "whatsappMessage": "Oi! Acabei de pedir um orçamento no seu site.",
+    "success": {
+      "title": "Você está dentro.",
+      "body": "Respondemos em até 2 horas com os próximos passos. Sem necessidade de ligação para começar.",
+      "instantPrompt": "Prefere uma resposta na hora?",
+      "whatsappAriaLabel": "Conversar no WhatsApp (abre em nova aba)",
+      "whatsappCta": "Conversar no WhatsApp"
+    },
+    "fields": {
+      "name": "Nome",
+      "email": "E-mail",
+      "website": "Seu site atual (opcional)"
+    },
+    "errors": {
+      "missingFields": "Nome e e-mail são obrigatórios.",
+      "invalidEmail": "Digite um e-mail válido.",
+      "success": "Obrigado! Responderemos em até 2 horas."
+    },
+    "footnote": "Resposta em até 2 horas · Sem spam, sem pressão · {count} vagas restantes este mês"
+  },
+  "footer": {
+    "tagline": "Feito em 72 horas. Por nós, obviamente."
+  },
+  "whatsapp": {
+    "defaultMessage": "Oi! Gostaria de um orçamento para um site.",
+    "ariaLabel": "Conversar no WhatsApp (abre em nova aba)"
+  }
+}
