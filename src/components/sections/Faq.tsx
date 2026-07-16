@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import Reveal from "@/components/ui/Reveal";
+import SplitText from "@/components/ui/SplitText";
 
 const faqIds = ["delivery", "ownership", "revisions", "international", "requirements", "payments"] as const;
 
@@ -7,12 +8,12 @@ export default async function Faq() {
   const t = await getTranslations("faq");
 
   return (
-    <section className="mx-auto max-w-6xl px-6 py-24">
-      <Reveal>
-        <h2 className="font-display text-3xl font-bold tracking-tight md:text-5xl">
-          {t("heading")}
-        </h2>
-      </Reveal>
+    <section id="faq" className="mx-auto max-w-6xl scroll-mt-24 px-6 py-24">
+      <SplitText
+        as="h2"
+        text={t("heading")}
+        className="font-display text-3xl font-bold tracking-tight md:text-5xl"
+      />
 
       <div className="mt-10 divide-y divide-surface-border border-y border-surface-border">
         {faqIds.map((id, i) => (

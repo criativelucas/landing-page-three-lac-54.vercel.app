@@ -1,6 +1,8 @@
 import { getTranslations } from "next-intl/server";
 import { Check, FileText, Layers, TrendingUp } from "lucide-react";
 import Reveal from "@/components/ui/Reveal";
+import SplitText from "@/components/ui/SplitText";
+import FloatingIcon from "@/components/ui/FloatingIcon";
 
 interface Plan {
   id: "launch" | "business" | "growth";
@@ -18,12 +20,20 @@ export default async function Pricing() {
   const t = await getTranslations("pricing");
 
   return (
-    <section id="pricing" className="scroll-mt-24 bg-ink">
-      <div className="mx-auto max-w-6xl px-6 py-24">
-        <Reveal>
-          <h2 className="max-w-2xl font-display text-3xl font-bold tracking-tight text-white md:text-5xl">
-            {t("heading")}
-          </h2>
+    <section id="pricing" className="relative scroll-mt-24 overflow-hidden bg-ink">
+      <FloatingIcon
+        src="/assets/icon-money.png"
+        alt=""
+        size={220}
+        className="absolute -right-6 top-10 z-0 hidden opacity-90 md:block lg:right-10"
+      />
+      <div className="relative z-10 mx-auto max-w-6xl px-6 py-24">
+        <SplitText
+          as="h2"
+          text={t("heading")}
+          className="max-w-2xl font-display text-3xl font-bold tracking-tight text-white md:text-5xl"
+        />
+        <Reveal delay={0.1}>
           <p className="mt-4 text-lg text-white/70">{t("subheading")}</p>
         </Reveal>
 

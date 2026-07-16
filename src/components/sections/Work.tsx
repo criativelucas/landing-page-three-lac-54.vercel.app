@@ -2,6 +2,7 @@ import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import { Stethoscope, Wrench, Dumbbell, Scale } from "lucide-react";
 import Reveal from "@/components/ui/Reveal";
+import SplitText from "@/components/ui/SplitText";
 import Logomark from "@/components/Logomark";
 
 const featuredCase = {
@@ -36,11 +37,11 @@ export default async function Work() {
   return (
     <section id="work" className="scroll-mt-24 bg-accent">
       <div className="mx-auto max-w-6xl px-6 py-24">
-        <Reveal>
-          <h2 className="max-w-2xl font-display text-3xl font-bold tracking-tight text-accent-ink md:text-5xl">
-            {t("heading")}
-          </h2>
-        </Reveal>
+        <SplitText
+          as="h2"
+          text={t("heading")}
+          className="max-w-2xl font-display text-3xl font-bold tracking-tight text-accent-ink md:text-5xl"
+        />
 
         <Reveal delay={0.08}>
           <a

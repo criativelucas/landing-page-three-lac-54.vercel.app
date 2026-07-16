@@ -5,6 +5,7 @@ import { useFormStatus } from "react-dom";
 import { useTranslations } from "next-intl";
 import { submitQuoteRequest, type QuoteFormState } from "@/app/actions";
 import { buildWhatsAppUrl, SLOTS_LEFT_THIS_MONTH } from "@/lib/site-config";
+import LivePing from "@/components/ui/LivePing";
 
 const initialState: QuoteFormState = { status: "idle" };
 
@@ -110,7 +111,8 @@ export default function FinalCta() {
           </form>
         )}
 
-        <p className="mt-6 text-sm text-white/70">
+        <p className="mt-6 inline-flex items-center gap-2 text-sm text-white/70">
+          <LivePing />
           {t("footnote", { count: SLOTS_LEFT_THIS_MONTH })}
         </p>
       </div>

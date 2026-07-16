@@ -52,7 +52,11 @@
         "price": "$497",
         "tagline": "High-converting one-pager",
         "cta": "Start with Launch",
-        "features": ["72h delivery", "Copywriting included", "Mobile-first design"]
+        "features": [
+          "72h delivery",
+          "Copywriting included",
+          "Mobile-first design"
+        ]
       },
       "business": {
         "name": "Business",
@@ -60,14 +64,22 @@
         "agencyQuote": "$3,000-5,000",
         "tagline": "Full 5-page website",
         "cta": "Get Business",
-        "features": ["7-day delivery", "Copy + local SEO + analytics", "Mobile-first design"]
+        "features": [
+          "7-day delivery",
+          "Copy + local SEO + analytics",
+          "Mobile-first design"
+        ]
       },
       "growth": {
         "name": "Growth",
         "price": "$1,997",
         "tagline": "Website + growth engine",
         "cta": "Scale with Growth",
-        "features": ["10-day delivery", "Everything in Business", "Blog, email & lead automation"]
+        "features": [
+          "10-day delivery",
+          "Everything in Business",
+          "Blog, email & lead automation"
+        ]
       }
     }
   },
@@ -106,10 +118,26 @@
     "conceptTag": "CONCEPT",
     "typicalForNiche": "typical for this niche",
     "cases": {
-      "dental": { "niche": "Dental Clinic", "stat": "+40%", "caption": "Booking requests" },
-      "contractor": { "niche": "Contractor / Home Services", "stat": "3x", "caption": "Quote requests" },
-      "trainer": { "niche": "Personal Trainer", "stat": "+55%", "caption": "Trial signups" },
-      "law": { "niche": "Law Firm", "stat": "+28%", "caption": "Consult bookings" }
+      "dental": {
+        "niche": "Dental Clinic",
+        "stat": "+40%",
+        "caption": "Booking requests"
+      },
+      "contractor": {
+        "niche": "Contractor / Home Services",
+        "stat": "3x",
+        "caption": "Quote requests"
+      },
+      "trainer": {
+        "niche": "Personal Trainer",
+        "stat": "+55%",
+        "caption": "Trial signups"
+      },
+      "law": {
+        "niche": "Law Firm",
+        "stat": "+28%",
+        "caption": "Consult bookings"
+      }
     },
     "cta": "Want results like these? Start your project"
   },
@@ -128,8 +156,8 @@
     }
   },
   "guarantee": {
-    "heading": "Live in 72 hours. <accent>Or 20% off.</accent> Guaranteed.",
-    "body": "We control the process end-to-end, so we can promise what agencies can't: your deadline is our deadline. Miss it, and you get 20% back. No fine print."
+    "heading": "You approve <accent>before you pay the balance.</accent>",
+    "body": "50% books your slot, and you only pay the rest once you've seen the finished site on a private preview and love it. Not what you wanted? Don't pay the balance. That simple."
   },
   "faq": {
     "heading": "Questions, answered.",
@@ -190,5 +218,14 @@
   "whatsapp": {
     "defaultMessage": "Hi! I'd like a quote for a website.",
     "ariaLabel": "Chat on WhatsApp (opens in new tab)"
+  },
+  "sectionNav": {
+    "intro": "Intro",
+    "problem": "Problem",
+    "pricing": "Pricing",
+    "process": "Process",
+    "work": "Work",
+    "faq": "FAQ",
+    "quote": "Quote"
   }
 }

@@ -1,6 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import { Gauge, Smartphone, MousePointerClick } from "lucide-react";
 import Reveal from "@/components/ui/Reveal";
+import SplitText from "@/components/ui/SplitText";
 
 const problems = [
   { Icon: Gauge, key: "speed" },
@@ -12,12 +13,12 @@ export default async function Problem() {
   const t = await getTranslations("problem");
 
   return (
-    <section className="mx-auto max-w-6xl px-6 py-24">
-      <Reveal>
-        <h2 className="max-w-2xl font-display text-3xl font-bold tracking-tight md:text-5xl">
-          {t("heading")}
-        </h2>
-      </Reveal>
+    <section id="problem" className="mx-auto max-w-6xl scroll-mt-24 px-6 py-24">
+      <SplitText
+        as="h2"
+        text={t("heading")}
+        className="max-w-2xl font-display text-3xl font-bold tracking-tight md:text-5xl"
+      />
       <Reveal delay={0.08}>
         <p className="mt-6 max-w-xl text-lg text-muted">{t("subheading")}</p>
       </Reveal>

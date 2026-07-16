@@ -2,6 +2,7 @@ import BrainCanvasLoader from "@/components/BrainCanvasLoader";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import SectionNavProvider from "@/components/SectionNavProvider";
 import JsonLd from "@/components/JsonLd";
 import Hero from "@/components/sections/Hero";
 import SocialProofBar from "@/components/sections/SocialProofBar";
@@ -20,6 +21,7 @@ export default function Home() {
       <JsonLd />
       <BrainCanvasLoader />
       <Navbar />
+      <SectionNavProvider />
       <main id="main-content" className="flex-1">
         <Hero />
         <div className="relative bg-background">

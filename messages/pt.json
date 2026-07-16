@@ -52,7 +52,11 @@
         "price": "R$ 1.997",
         "tagline": "Landing page de alta conversão",
         "cta": "Começar com Launch",
-        "features": ["Entrega em 72h", "Copywriting incluso", "Design mobile-first"]
+        "features": [
+          "Entrega em 72h",
+          "Copywriting incluso",
+          "Design mobile-first"
+        ]
       },
       "business": {
         "name": "Business",
@@ -60,14 +64,22 @@
         "agencyQuote": "R$ 12.000-20.000",
         "tagline": "Site completo de 5 páginas",
         "cta": "Escolher Business",
-        "features": ["Entrega em 7 dias", "Copy + SEO local + analytics", "Design mobile-first"]
+        "features": [
+          "Entrega em 7 dias",
+          "Copy + SEO local + analytics",
+          "Design mobile-first"
+        ]
       },
       "growth": {
         "name": "Growth",
         "price": "R$ 7.997",
         "tagline": "Site + motor de crescimento",
         "cta": "Escalar com Growth",
-        "features": ["Entrega em 10 dias", "Tudo do Business", "Blog, e-mail e automação de leads"]
+        "features": [
+          "Entrega em 10 dias",
+          "Tudo do Business",
+          "Blog, e-mail e automação de leads"
+        ]
       }
     }
   },
@@ -106,10 +118,26 @@
     "conceptTag": "CONCEITO",
     "typicalForNiche": "típico para este nicho",
     "cases": {
-      "dental": { "niche": "Clínica Odontológica", "stat": "+40%", "caption": "Pedidos de agendamento" },
-      "contractor": { "niche": "Prestador de Serviços", "stat": "3x", "caption": "Pedidos de orçamento" },
-      "trainer": { "niche": "Personal Trainer", "stat": "+55%", "caption": "Cadastros de aula experimental" },
-      "law": { "niche": "Escritório de Advocacia", "stat": "+28%", "caption": "Consultas agendadas" }
+      "dental": {
+        "niche": "Clínica Odontológica",
+        "stat": "+40%",
+        "caption": "Pedidos de agendamento"
+      },
+      "contractor": {
+        "niche": "Prestador de Serviços",
+        "stat": "3x",
+        "caption": "Pedidos de orçamento"
+      },
+      "trainer": {
+        "niche": "Personal Trainer",
+        "stat": "+55%",
+        "caption": "Cadastros de aula experimental"
+      },
+      "law": {
+        "niche": "Escritório de Advocacia",
+        "stat": "+28%",
+        "caption": "Consultas agendadas"
+      }
     },
     "cta": "Quer resultados assim? Comece seu projeto"
   },
@@ -128,8 +156,8 @@
     }
   },
   "guarantee": {
-    "heading": "No ar em 72 horas. <accent>Ou 20% de volta.</accent> Garantido.",
-    "body": "Controlamos o processo do início ao fim, então podemos prometer o que agências não conseguem: seu prazo é o nosso prazo. Se perdermos, você recebe 20% de volta. Sem letras miúdas."
+    "heading": "Você aprova <accent>antes de pagar o saldo.</accent>",
+    "body": "50% reserva sua vaga, e você só paga o restante depois de ver o site pronto num preview privado e amar o resultado. Não ficou do seu jeito? Não paga o saldo. Simples assim."
   },
   "faq": {
     "heading": "Perguntas, respondidas.",
@@ -190,5 +218,14 @@
   "whatsapp": {
     "defaultMessage": "Oi! Gostaria de um orçamento para um site.",
     "ariaLabel": "Conversar no WhatsApp (abre em nova aba)"
+  },
+  "sectionNav": {
+    "intro": "Início",
+    "problem": "Problema",
+    "pricing": "Preços",
+    "process": "Processo",
+    "work": "Portfólio",
+    "faq": "FAQ",
+    "quote": "Orçamento"
   }
 }

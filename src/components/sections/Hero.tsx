@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import Reveal from "@/components/ui/Reveal";
+import SplitText from "@/components/ui/SplitText";
 import BrainDragHitArea from "@/components/BrainDragHitArea";
 
 export default async function Hero() {
@@ -20,11 +21,13 @@ export default async function Hero() {
         <Reveal delay={0.05}>
           <p className="mt-6 font-pixel text-xs tracking-[0.2em] text-accent">{t("eyebrow")}</p>
         </Reveal>
-        <Reveal delay={0.1}>
-          <h1 className="mt-4 font-display text-5xl font-bold leading-[1.05] tracking-tight text-white md:text-7xl">
-            {t("headline")}
-          </h1>
-        </Reveal>
+        <SplitText
+          as="h1"
+          text={t("headline")}
+          delay={0.15}
+          stagger={0.08}
+          className="mt-4 font-display text-5xl font-bold leading-[1.05] tracking-tight text-white md:text-7xl"
+        />
         <Reveal delay={0.18}>
           <p className="mt-6 max-w-lg text-lg text-white/70 md:text-xl">
             {t.rich("description", {
