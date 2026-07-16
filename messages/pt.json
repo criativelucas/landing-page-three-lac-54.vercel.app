@@ -227,5 +227,15 @@
     "work": "Portfólio",
     "faq": "FAQ",
     "quote": "Orçamento"
+  },
+  "nowWidget": {
+    "building": "Construindo agora:",
+    "lastLaunch": "Último lançamento:",
+    "availability": "Disponibilidade:"
+  },
+  "founder": {
+    "heading": "O humano por trás da IA.",
+    "body": "Eu sou o Lucas. Uso IA para o trabalho pesado para poder focar em aperfeiçoar seu design e copy. Você tem qualidade de agência sem os custos de uma.",
+    "commitment": "Meu compromisso: respostas no mesmo dia, sem enrolação."
   }
 }

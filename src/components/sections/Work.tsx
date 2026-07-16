@@ -35,7 +35,7 @@ export default async function Work() {
   const t = await getTranslations("work");
 
   return (
-    <section id="work" className="scroll-mt-24 bg-accent">
+    <section id="work" className="scroll-mt-24 bg-accent -mt-8 rounded-t-[2.5rem] pt-8 md:-mt-12 md:rounded-t-[4rem] md:pt-12 z-20 relative">
       <div className="mx-auto max-w-6xl px-6 py-24">
         <SplitText
           as="h2"

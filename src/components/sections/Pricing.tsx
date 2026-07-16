@@ -20,7 +20,7 @@ export default async function Pricing() {
   const t = await getTranslations("pricing");
 
   return (
-    <section id="pricing" className="relative scroll-mt-24 overflow-hidden bg-ink">
+    <section id="pricing" className="relative scroll-mt-24 overflow-hidden bg-ink -mt-8 rounded-t-[2.5rem] pt-8 md:-mt-12 md:rounded-t-[4rem] md:pt-12 z-20">
       <FloatingIcon
         src="/assets/icon-money.png"
         alt=""

@@ -2,6 +2,7 @@ import { getTranslations } from "next-intl/server";
 import Reveal from "@/components/ui/Reveal";
 import SplitText from "@/components/ui/SplitText";
 import BrainDragHitArea from "@/components/BrainDragHitArea";
+import NowWidget from "@/components/ui/NowWidget";
 
 export default async function Hero() {
   const t = await getTranslations("hero");
@@ -55,6 +56,12 @@ export default async function Hero() {
         </Reveal>
         <Reveal delay={0.32}>
           <p className="mt-4 text-sm text-white/70">{t("microcopy")}</p>
+        </Reveal>
+        
+        <Reveal delay={0.4}>
+          <div className="mt-16 border-t border-white/10 pt-8 max-w-fit">
+            <NowWidget />
+          </div>
         </Reveal>
       </div>
     </section>

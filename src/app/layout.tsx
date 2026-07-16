@@ -3,6 +3,8 @@ import { Urbanist, Inter, Silkscreen } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getTranslations } from "next-intl/server";
 import MotionProvider from "@/components/MotionProvider";
+import SmoothScroll from "@/components/ui/SmoothScroll";
+import CustomCursor from "@/components/ui/CustomCursor";
 import "./globals.css";
 
 const urbanist = Urbanist({
@@ -55,7 +57,12 @@ export default async function RootLayout({
           Skip to content
         </a>
         <NextIntlClientProvider>
-          <MotionProvider>{children}</MotionProvider>
+          <SmoothScroll>
+            <MotionProvider>
+              <CustomCursor />
+              {children}
+            </MotionProvider>
+          </SmoothScroll>
         </NextIntlClientProvider>
       </body>
     </html>

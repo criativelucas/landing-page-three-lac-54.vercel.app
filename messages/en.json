@@ -227,5 +227,15 @@
     "work": "Work",
     "faq": "FAQ",
     "quote": "Quote"
+  },
+  "nowWidget": {
+    "building": "Building now:",
+    "lastLaunch": "Last launch:",
+    "availability": "Availability:"
+  },
+  "founder": {
+    "heading": "The human behind the AI.",
+    "body": "I'm Lucas. I use AI to do the heavy lifting so I can spend my time perfecting your design and copy. You get agency quality without the agency overhead.",
+    "commitment": "My commitment: same-day replies, zero BS."
   }
 }

@@ -11,6 +11,7 @@ import Pricing from "@/components/sections/Pricing";
 import Process from "@/components/sections/Process";
 import Work from "@/components/sections/Work";
 import Testimonials from "@/components/sections/Testimonials";
+import Founder from "@/components/sections/Founder";
 import Guarantee from "@/components/sections/Guarantee";
 import Faq from "@/components/sections/Faq";
 import FinalCta from "@/components/sections/FinalCta";
@@ -31,6 +32,7 @@ export default function Home() {
           <Process />
           <Work />
           <Testimonials />
+          <Founder />
           <Guarantee />
           <Faq />
         </div>
