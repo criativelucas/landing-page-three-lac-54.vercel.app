@@ -5,10 +5,22 @@ import Reveal from "@/components/ui/Reveal";
 import SplitText from "@/components/ui/SplitText";
 import Logomark from "@/components/Logomark";
 
-const featuredCase = {
-  href: "https://site-efraim.vercel.app",
-  url: "site-efraim.vercel.app",
-};
+// Shipped client sites. These are the only real proof on the page, so nothing
+// goes in this list until it is publicly live at the URL shown.
+const featuredCases = [
+  {
+    id: "duoclinic",
+    href: "https://duo-clinic-eosin.vercel.app",
+    url: "duo-clinic-eosin.vercel.app",
+    dir: "duoclinic",
+  },
+  {
+    id: "efraim",
+    href: "https://site-efraim.vercel.app",
+    url: "site-efraim.vercel.app",
+    dir: "efraim",
+  },
+] as const;
 
 // Illustrative examples — swap for real client results as they land.
 const cases = [
@@ -43,56 +55,62 @@ export default async function Work() {
           className="max-w-2xl font-display text-3xl font-bold tracking-tight text-accent-ink md:text-5xl"
         />
 
-        <Reveal delay={0.08}>
-          <a
-            href={featuredCase.href}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label={t("featured.ariaLabel")}
-            className="group mt-12 grid gap-0 overflow-hidden rounded-2xl border border-ink/20 bg-surface shadow-xl shadow-black/20 transition-transform hover:scale-[1.005] sm:grid-cols-[1fr_auto]"
-          >
-            <div className="flex flex-col">
-              <BrowserChrome url={featuredCase.url} />
-              <div className="relative aspect-[2876/1592] w-full overflow-hidden">
-                <Image
-                  src="/work/efraim/desktop.png"
-                  alt={t("featured.heroAlt")}
-                  fill
-                  sizes="(min-width: 640px) 60vw, 100vw"
-                  className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
-                />
-              </div>
-            </div>
+        <div className="mt-12 space-y-6">
+          {featuredCases.map((item, i) => (
+            <Reveal key={item.id} delay={0.08 + i * 0.06}>
+              <a
+                href={item.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={t(`featured.${item.id}.ariaLabel`)}
+                className="group grid gap-0 overflow-hidden rounded-2xl border border-ink/20 bg-surface shadow-xl shadow-black/20 transition-transform hover:scale-[1.005] sm:grid-cols-[1fr_auto]"
+              >
+                <div className="flex flex-col">
+                  <BrowserChrome url={item.url} />
+                  <div className="relative aspect-[16/9] w-full overflow-hidden">
+                    <Image
+                      src={`/work/${item.dir}/desktop.png`}
+                      alt={t(`featured.${item.id}.heroAlt`)}
+                      fill
+                      sizes="(min-width: 640px) 60vw, 100vw"
+                      className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                    />
+                  </div>
+                </div>
 
-            <div className="hidden w-40 shrink-0 flex-col border-l border-surface-border/60 sm:flex">
-              <div className="border-b border-surface-border/60 bg-surface px-3 py-2.5 text-center font-pixel text-[9px] text-muted">
-                {t("featured.mobileLabel")}
-              </div>
-              <div className="relative flex-1 overflow-hidden">
-                <Image
-                  src="/work/efraim/mobile.png"
-                  alt={t("featured.mobileAlt")}
-                  fill
-                  sizes="160px"
-                  className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
-                />
-              </div>
-            </div>
+                <div className="hidden w-40 shrink-0 flex-col border-l border-surface-border/60 sm:flex">
+                  <div className="border-b border-surface-border/60 bg-surface px-3 py-2.5 text-center font-pixel text-[9px] text-muted">
+                    {t("featured.mobileLabel")}
+                  </div>
+                  <div className="relative flex-1 overflow-hidden">
+                    <Image
+                      src={`/work/${item.dir}/mobile.png`}
+                      alt={t(`featured.${item.id}.mobileAlt`)}
+                      fill
+                      sizes="160px"
+                      className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                    />
+                  </div>
+                </div>
 
-            <div className="flex items-center gap-3 border-t border-surface-border/60 bg-surface p-6 sm:col-span-2">
-              <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-ink">
-                <Logomark className="h-4 w-4 text-accent" />
-              </span>
-              <div className="min-w-0 flex-1">
-                <span className="text-sm font-medium">{t("featured.niche")}</span>
-                <p className="mt-1 truncate text-sm text-muted">{t("featured.caption")}</p>
-              </div>
-              <span className="shrink-0 text-sm font-semibold text-accent-ink underline">
-                {t("featured.viewSite")}
-              </span>
-            </div>
-          </a>
-        </Reveal>
+                <div className="flex items-center gap-3 border-t border-surface-border/60 bg-surface p-6 sm:col-span-2">
+                  <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-ink">
+                    <Logomark className="h-4 w-4 text-accent" />
+                  </span>
+                  <div className="min-w-0 flex-1">
+                    <span className="text-sm font-medium">{t(`featured.${item.id}.niche`)}</span>
+                    <p className="mt-1 truncate text-sm text-muted">
+                      {t(`featured.${item.id}.caption`)}
+                    </p>
+                  </div>
+                  <span className="shrink-0 text-sm font-semibold text-accent-ink underline">
+                    {t("featured.viewSite")}
+                  </span>
+                </div>
+              </a>
+            </Reveal>
+          ))}
+        </div>
 
         <div className="mt-6 grid gap-6 md:grid-cols-2">
           {cases.map((item, i) => (

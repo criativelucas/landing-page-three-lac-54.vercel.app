@@ -49,7 +49,13 @@ export default async function RootLayout({
       lang={locale}
       className={`${urbanist.variable} ${inter.variable} ${silkscreen.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-background text-foreground">
+      {/* bg-ink, not bg-background: the Hero paints no background of its own and
+          its text is white, so the only thing behind it is whatever the body
+          shows. The WebGL canvas that used to supply that backdrop is ssr:false,
+          so a light body left the headline white-on-light-grey until three.js
+          hydrated (and forever if WebGL failed). The mid sections carry their own
+          opaque bg-background wrapper, so nothing else sees this. */}
+      <body className="min-h-full flex flex-col bg-ink text-foreground">
         <a
           href="#main-content"
           className="sr-only focus-visible:not-sr-only focus-visible:fixed focus-visible:left-4 focus-visible:top-4 focus-visible:z-[100] focus-visible:rounded-full focus-visible:bg-accent focus-visible:px-4 focus-visible:py-2 focus-visible:text-sm focus-visible:font-semibold focus-visible:text-accent-ink"

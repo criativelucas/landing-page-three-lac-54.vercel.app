@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "Websites That Think: AI-Powered Websites in 72 Hours";
+export const alt = "Websites That Think: Your Site Live in 72 Hours";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -31,7 +31,7 @@ export default function Image() {
           Websites that think.
         </div>
         <div style={{ display: "flex", fontSize: 34, color: "#e3ff3d", marginTop: 24 }}>
-          AI-powered websites, shipped in 72 hours.
+          Custom websites, shipped in 72 hours.
         </div>
       </div>
     ),

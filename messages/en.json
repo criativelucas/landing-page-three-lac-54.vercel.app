@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Websites That Think | AI-Powered Websites in 72 Hours",
-    "description": "Conversion-engineered websites, designed, written and shipped in 72 hours. Built with AI. Perfected by a human."
+    "title": "Websites That Think | Your Site Live in 72 Hours",
+    "description": "Conversion-engineered websites, designed, written and shipped in 72 hours. Custom-built for your business. No templates, no agency wait."
   },
   "nav": {
     "work": "Work",
@@ -13,10 +13,9 @@
   },
   "hero": {
     "dragToRotate": "↔ DRAG TO ROTATE",
-    "badge": "⚡ AVG. DELIVERY: 3 DAYS",
-    "eyebrow": "AI-POWERED WEB STUDIO",
+    "eyebrow": "CONVERSION-FIRST WEB STUDIO",
     "headline": "Websites that think.",
-    "description": "Conversion-engineered websites, designed, written and shipped in <strong>72 hours</strong>. Built with AI. Perfected by a human.",
+    "description": "Conversion-engineered websites, designed, written and shipped in <strong>72 hours</strong>. Custom-built for your business. Perfected by hand.",
     "primaryCta": "Get your site in 72h",
     "secondaryCta": "See the work",
     "microcopy": "No calls required to get a quote. Reply within 2 hours, same day."
@@ -94,7 +93,7 @@
       "build": {
         "title": "Build",
         "when": "Day 1-2",
-        "text": "AI-accelerated design & copy, refined by hand. You get a private preview link."
+        "text": "Your design and copy, built from your brief and refined by hand. You get a private preview link."
       },
       "launch": {
         "title": "Launch",
@@ -107,13 +106,22 @@
   "work": {
     "heading": "Built to convert. Designed to impress.",
     "featured": {
-      "ariaLabel": "Photographer Efraim Gomes: view live site (opens in new tab)",
-      "heroAlt": "Efraim Gomes photography site, desktop view",
       "mobileLabel": "MOBILE",
-      "mobileAlt": "Efraim Gomes photography site, mobile view",
-      "niche": "Photographer: Efraim Gomes",
-      "caption": "Real client project with a masonry gallery, parallax and lightbox",
-      "viewSite": "View site ↗"
+      "viewSite": "View site ↗",
+      "duoclinic": {
+        "ariaLabel": "Duo Clinic: view the live site (opens in a new tab)",
+        "heroAlt": "Duo Clinic website, desktop version",
+        "mobileAlt": "Duo Clinic website, mobile version",
+        "niche": "Medical Clinic: Duo Clinic",
+        "caption": "Real client project, with booking straight through WhatsApp"
+      },
+      "efraim": {
+        "ariaLabel": "Photographer Efraim Gomes: view live site (opens in new tab)",
+        "heroAlt": "Efraim Gomes photography site, desktop view",
+        "mobileAlt": "Efraim Gomes photography site, mobile view",
+        "niche": "Photographer: Efraim Gomes",
+        "caption": "Real client project with a masonry gallery, parallax and lightbox"
+      }
     },
     "conceptTag": "CONCEPT",
     "typicalForNiche": "typical for this niche",
@@ -164,7 +172,7 @@
     "items": {
       "delivery": {
         "q": "How can you deliver in 72 hours?",
-        "a": "AI handles the heavy lifting (drafts, variations, boilerplate). A human designer perfects every pixel and word. You get agency quality at startup speed."
+        "a": "A tight process, and one project at a time. A 10-minute brief gives me everything I need, there's no committee to wait on and no back-and-forth between three departments. You get agency quality without the agency overhead."
       },
       "ownership": {
         "q": "Do I own the website?",
@@ -190,27 +198,11 @@
   },
   "finalCta": {
     "heading": "Your competitors' websites were built last decade.<accent>Yours launches this week.</accent>",
-    "sending": "Sending…",
-    "submit": "Get my free quote →",
-    "whatsappMessage": "Hi! I just requested a quote on your site.",
-    "success": {
-      "title": "You're in.",
-      "body": "We reply within 2 hours with next steps. No calls needed to get started.",
-      "instantPrompt": "Prefer an instant answer?",
-      "whatsappAriaLabel": "Chat on WhatsApp (opens in new tab)",
-      "whatsappCta": "Chat on WhatsApp"
-    },
-    "fields": {
-      "name": "Name",
-      "email": "Email",
-      "website": "Your current website (optional)"
-    },
-    "errors": {
-      "missingFields": "Name and email are required.",
-      "invalidEmail": "Enter a valid email address.",
-      "success": "Thanks! We'll reply within 2 hours."
-    },
-    "footnote": "Reply within 2 hours · No spam, no pressure · {count} slots left this month"
+    "subheading": "Send me a message now. I reply personally, within 2 hours.",
+    "whatsappMessage": "Hi! I saw your site and I would like a quote.",
+    "whatsappCta": "Chat on WhatsApp",
+    "whatsappAriaLabel": "Chat on WhatsApp (opens in a new tab)",
+    "footnote": "Reply within 2 hours · No commitment, no pressure · {count} slots left this month"
   },
   "footer": {
     "tagline": "Built in 72 hours. By us, obviously."
@@ -226,16 +218,101 @@
     "process": "Process",
     "work": "Work",
     "faq": "FAQ",
-    "quote": "Quote"
-  },
-  "nowWidget": {
-    "building": "Building now:",
-    "lastLaunch": "Last launch:",
-    "availability": "Availability:"
+    "quote": "Quote",
+    "founder": "Founder"
   },
   "founder": {
-    "heading": "The human behind the AI.",
-    "body": "I'm Lucas. I use AI to do the heavy lifting so I can spend my time perfecting your design and copy. You get agency quality without the agency overhead.",
-    "commitment": "My commitment: same-day replies, zero BS."
+    "heading": "The person behind your site.",
+    "body": "I'm Lucas. I build every site myself, start to finish. You talk to me directly, never to an account manager. That's why your site ships in days instead of months, and why it looks like your business and nobody else's.",
+    "commitment": "My commitment: same-day replies, zero BS.",
+    "photoAlt": "Lucas, founder of think.studio, holding a glowing green crystal"
+  },
+  "pitch": {
+    "meta": {
+      "title": "{client} × think.studio"
+    },
+    "cover": {
+      "defaultClient": "Your business",
+      "headline": "A website that books clients. <accent>Live in 72 hours.</accent>",
+      "hint": "scroll ↓"
+    },
+    "diagnosis": {
+      "eyebrow": "WHERE YOU ARE TODAY",
+      "heading": "This is your site, on a phone, this morning.",
+      "chip1": "Booking button: below the fold on mobile",
+      "chip2": "Load time: {load}s — half your visitors are gone at 3s",
+      "chip3": "No single clear action for a first-time visitor",
+      "note": "None of this is about looks. It's about the moment someone decides to book — and can't find where.",
+      "placeholder": "current site screenshot — add ?shot=file.png"
+    },
+    "cost": {
+      "eyebrow": "WHAT IT'S COSTING YOU",
+      "heading": "{reviews} reviews at {stars}★ — and a site that leaks them.",
+      "body": "Every month, people find your reviews, tap your site… and a slow page loses about half of them before it even opens.",
+      "math": "2 lost bookings/mo × {ticket} avg. ticket",
+      "result": "≈ {yearly}/year — invisible, every year",
+      "note": "Deliberately conservative. You never see these people leave — that's exactly what makes it expensive."
+    },
+    "compare": {
+      "eyebrow": "WHAT GOOD LOOKS LIKE",
+      "heading": "Yours would be this — with your treatments, your photos, your voice.",
+      "before": "TODAY",
+      "after": "72H FROM NOW",
+      "point1": "Booking is the first thing you see",
+      "point2": "Loads in under a second",
+      "point3": "Every section pushes to one action",
+      "demoCta": "Open live demo ↗"
+    },
+    "process": {
+      "eyebrow": "HOW IT WORKS",
+      "step1Title": "Brief",
+      "step1Body": "A 10-minute form. That's all I need from you.",
+      "step2Title": "Build",
+      "step2Body": "72 hours. You get a private preview link.",
+      "step3Title": "Launch",
+      "step3Body": "You approve — it goes live.",
+      "highlight": "You approve everything <accent>before paying anything</accent>."
+    },
+    "founding": {
+      "eyebrow": "WHY THIS EXISTS",
+      "heading": "I'm building my med spa portfolio: <accent>5 founding clients</accent>, full build, founding rate.",
+      "trade": "The trade: a 30-second video testimonial once your site is live and working.",
+      "slots": "{taken} of 5 slots taken"
+    },
+    "proof": {
+      "eyebrow": "PROOF",
+      "heading": "Live projects. Poke at them after we talk.",
+      "case1Niche": "Medical clinic",
+      "case1Name": "Duo Clinic",
+      "case2Niche": "Photographer",
+      "case2Name": "Efraim Gomes",
+      "visit": "Visit ↗"
+    },
+    "stack": {
+      "eyebrow": "EVERYTHING INCLUDED",
+      "heading": "Done-for-you, end to end.",
+      "i1": "Custom design — no template",
+      "i2": "Copywriting included — written to book, not to decorate",
+      "i3": "Mobile-first · SSL · sub-1-second load",
+      "i4": "Booking front and center · Google Business Profile linked",
+      "i5": "Analytics · basic SEO · 30 days of hosting",
+      "i6": "2 revision rounds · you own 100% of everything",
+      "note": "Nothing to hire separately. Nothing extra to buy."
+    },
+    "invest": {
+      "eyebrow": "INVESTMENT",
+      "anchor": "Agencies quote this at <strike>$3,000–$5,000</strike>, in 3–6 weeks.",
+      "standard": "Standard rate: <strike>$997</strike>",
+      "price": "$497",
+      "priceNote": "founding rate · one time · no subscription",
+      "risk": "You pay <accent>$0 today</accent>. I build the site first — you only pay when you approve it and want it live.",
+      "guarantee": "Live in 72h or 20% back · Optional Care Plan from $49/mo — first month free"
+    },
+    "next": {
+      "heading": "Ready?",
+      "body": "The only thing that happens today: I send you the briefing form — 10 minutes, whenever you have a quiet moment.",
+      "live": "Your site is live {day}.",
+      "defaultDay": "Thursday"
+    }
   }
 }

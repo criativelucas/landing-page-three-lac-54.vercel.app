@@ -108,3 +108,18 @@ h3,
   background: var(--accent);
   color: var(--accent-ink);
 }
+
+/* Subtle gradients for all background colors within their own spectrum */
+/* Using semi-transparent overlays preserves Tailwind's background-color and opacity modifiers */
+.bg-background {
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.05) 100%);
+}
+.bg-surface {
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.7) 0%, rgba(0, 0, 0, 0.02) 100%);
+}
+.bg-accent {
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.15) 100%);
+}
+.bg-ink {
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, rgba(0, 0, 0, 0.25) 100%);
+}

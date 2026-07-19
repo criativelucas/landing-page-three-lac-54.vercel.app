@@ -6,9 +6,10 @@ import SectionNav from "./SectionNav";
 const SECTIONS = [
   { id: "top", key: "intro", dark: true },
   { id: "problem", key: "problem", dark: false },
-  { id: "pricing", key: "pricing", dark: true },
-  { id: "process", key: "process", dark: false },
+  { id: "process", key: "process", dark: true },
   { id: "work", key: "work", dark: false },
+  { id: "pricing", key: "pricing", dark: true },
+  { id: "founder", key: "founder", dark: true },
   { id: "faq", key: "faq", dark: false },
   { id: "quote", key: "quote", dark: true },
 ] as const;

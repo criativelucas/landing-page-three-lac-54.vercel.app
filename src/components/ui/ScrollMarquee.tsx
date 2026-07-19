@@ -15,9 +15,12 @@ import {
 // Lando-style scroll-reactive marquee: idle auto-scroll, but scroll velocity
 // speeds it up and scroll direction flips it. One item list is repeated enough
 // times to cover any viewport; `wrap` keeps the x offset seamless.
+// `baseVelocity` is in PERCENT of the track per second (baseX feeds a % transform
+// below), and one full copy cycle spans 25%. So 1.5 ≈ a calm ~17s per cycle;
+// anything near 40 loops in well under a second and reads as frantic.
 export default function ScrollMarquee({
   items,
-  baseVelocity = 40,
+  baseVelocity = 1.5,
 }: {
   items: string[];
   baseVelocity?: number;
@@ -26,7 +29,12 @@ export default function ScrollMarquee({
   const { scrollY } = useScroll();
   const scrollVelocity = useVelocity(scrollY);
   const smoothVelocity = useSpring(scrollVelocity, { damping: 50, stiffness: 400 });
-  const velocityFactor = useTransform(smoothVelocity, [0, 1000], [0, 5], { clamp: false });
+  // Clamped and symmetric: keeps the sign (so direction still flips with scroll)
+  // while capping the boost, since an unclamped factor lets a fast flick
+  // multiply the speed without limit.
+  const velocityFactor = useTransform(smoothVelocity, [-2000, 0, 2000], [-4, 0, 4], {
+    clamp: true,
+  });
 
   // -20% because the track is duplicated; wrapping in [-20, -45] keeps a
   // continuous loop regardless of how many copies render.

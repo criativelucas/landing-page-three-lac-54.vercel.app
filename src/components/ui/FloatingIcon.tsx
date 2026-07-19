@@ -4,10 +4,10 @@ import Image from "next/image";
 import { useRef } from "react";
 import { motion, useMotionValue, useSpring, useTransform } from "motion/react";
 
-// 3D lime-green icons (Lando-style floating objects). The source JPEGs sit on a
-// pure-black background, so `mix-blend-mode: screen` drops the black out over
-// any dark section. Idle bob + mouse-driven 3D tilt; on a viewport without a
-// pointer the tilt just never fires, leaving the gentle bob.
+// 3D lime-green icons (Lando-style floating objects). The PNGs are cut out with
+// a real alpha channel, so they composite over any section, light or dark.
+// Idle bob + mouse-driven 3D tilt; on a viewport without a pointer the tilt
+// just never fires, leaving the gentle bob.
 export default function FloatingIcon({
   src,
   alt,
@@ -41,7 +41,7 @@ export default function FloatingIcon({
       ref={ref}
       onPointerMove={handleMove}
       onPointerLeave={reset}
-      className={`pointer-events-auto select-none [perspective:800px] ${className}`}
+      className={`js-reveal pointer-events-auto select-none [perspective:800px] ${className}`}
       initial={{ opacity: 0, scale: 0.6, y: 40 }}
       whileInView={{ opacity: 1, scale: 1, y: 0 }}
       viewport={{ once: true, margin: "-40px" }}
@@ -53,14 +53,17 @@ export default function FloatingIcon({
         style={{ rotateX, rotateY, transformStyle: "preserve-3d" }}
         animate={{ y: [0, -12, 0] }}
         transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-        className="h-full w-full"
+        // js-reveal also parks the idle bob and the pointer tilt below md: the
+        // tilt has no pointer to track on a phone anyway, and an infinite
+        // animation per icon is battery the icon isn't earning there.
+        className="js-reveal h-full w-full"
       >
         <Image
           src={src}
           alt={alt}
           width={size}
           height={size}
-          className="h-full w-full object-contain mix-blend-screen drop-shadow-[0_10px_30px_rgba(227,255,61,0.25)]"
+          className="h-full w-full object-contain drop-shadow-[0_10px_30px_rgba(227,255,61,0.25)]"
         />
       </motion.div>
     </motion.div>

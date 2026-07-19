@@ -1,73 +1,24 @@
 import { getTranslations } from "next-intl/server";
+import Image from "next/image";
 import { ClipboardList, Code2, Rocket } from "lucide-react";
 import SplitText from "@/components/ui/SplitText";
 import Reveal from "@/components/ui/Reveal";
 import FloatingIcon from "@/components/ui/FloatingIcon";
-import LivePing from "@/components/ui/LivePing";
 
 const steps = [
-  { id: "brief", n: "01", Icon: ClipboardList },
-  { id: "build", n: "02", Icon: Code2 },
-  { id: "launch", n: "03", Icon: Rocket },
+  { id: "brief", n: "01", Icon: ClipboardList, src: "/topics/brief.jpg" },
+  { id: "build", n: "02", Icon: Code2, src: "/topics/build.jpg" },
+  { id: "launch", n: "03", Icon: Rocket, src: "/topics/launch.jpg" },
 ] as const;
-
-function BriefVisual() {
-  return (
-    <div className="flex h-full flex-col justify-center gap-2 rounded-lg bg-background p-4">
-      <div className="h-2.5 w-3/4 rounded-full bg-surface-border" />
-      <div className="h-2.5 w-full rounded-full bg-surface-border" />
-      <div className="h-2.5 w-1/2 rounded-full bg-surface-border" />
-      <div className="mt-1 h-3 w-16 self-end rounded-full bg-accent" />
-    </div>
-  );
-}
-
-function BuildVisual() {
-  return (
-    <div className="flex h-full flex-col overflow-hidden rounded-lg bg-background">
-      <div className="flex items-center gap-1 border-b border-surface-border px-3 py-1.5">
-        <span className="h-1.5 w-1.5 rounded-full bg-surface-border" />
-        <span className="h-1.5 w-1.5 rounded-full bg-surface-border" />
-        <span className="h-1.5 w-1.5 rounded-full bg-surface-border" />
-      </div>
-      <div className="flex flex-1 flex-col justify-center gap-2 p-4">
-        <div className="h-2.5 w-2/3 animate-pulse rounded-full bg-surface-border" />
-        <div className="h-2.5 w-full animate-pulse rounded-full bg-surface-border" />
-        <div className="h-2.5 w-1/3 animate-pulse rounded-full bg-surface-border" />
-      </div>
-    </div>
-  );
-}
-
-function LaunchVisual() {
-  return (
-    <div className="flex h-full flex-col overflow-hidden rounded-lg bg-background">
-      <div className="flex items-center justify-between border-b border-surface-border px-3 py-1.5">
-        <div className="flex items-center gap-1">
-          <span className="h-1.5 w-1.5 rounded-full bg-surface-border" />
-          <span className="h-1.5 w-1.5 rounded-full bg-surface-border" />
-          <span className="h-1.5 w-1.5 rounded-full bg-surface-border" />
-        </div>
-        <span className="flex items-center gap-1.5 font-pixel text-[9px] text-accent-ink">
-          <LivePing /> LIVE
-        </span>
-      </div>
-      <div className="flex flex-1 flex-col justify-center gap-2 p-4">
-        <div className="h-2.5 w-2/3 rounded-full bg-ink" />
-        <div className="h-2.5 w-full rounded-full bg-accent" />
-        <div className="h-2.5 w-1/3 rounded-full bg-ink" />
-      </div>
-    </div>
-  );
-}
-
-const visuals = { brief: BriefVisual, build: BuildVisual, launch: LaunchVisual };
 
 export default async function Process() {
   const t = await getTranslations("process");
 
   return (
-    <section id="process" className="relative scroll-mt-24 overflow-hidden bg-ink">
+    <section
+      id="process"
+      className="relative z-20 -mt-8 scroll-mt-24 overflow-hidden rounded-t-[2.5rem] bg-ink pt-8 md:-mt-12 md:rounded-t-[4rem] md:pt-12"
+    >
       <FloatingIcon
         src="/assets/icon-calendar.png"
         alt=""
@@ -86,7 +37,6 @@ export default async function Process() {
             cleanly. Pure CSS sticky — no JS, no scroll listeners. */}
         <div className="mt-12">
           {steps.map((step, i) => {
-            const Visual = visuals[step.id];
             return (
               <div
                 key={step.id}
@@ -109,8 +59,14 @@ export default async function Process() {
                     </h3>
                     <p className="mt-3 text-sm text-muted">{t(`steps.${step.id}.text`)}</p>
                   </div>
-                  <div className="min-h-[140px]">
-                    <Visual />
+                  <div className="relative aspect-[4/3] w-full overflow-hidden rounded-lg bg-ink">
+                    <Image
+                      src={step.src}
+                      alt={t(`steps.${step.id}.text`)}
+                      fill
+                      sizes="(min-width: 768px) 40vw, 90vw"
+                      className="object-cover"
+                    />
                   </div>
                 </div>
               </div>

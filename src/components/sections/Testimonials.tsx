@@ -9,8 +9,8 @@ export default async function Testimonials() {
   const t = await getTranslations("testimonials");
 
   return (
-    <section className="mx-auto max-w-6xl px-6 py-24">
-      <div className="grid gap-6 md:grid-cols-2">
+    <section className="relative z-20 -mt-8 rounded-t-[2.5rem] bg-background px-6 py-24 pt-32 md:-mt-12 md:rounded-t-[4rem] md:pt-36">
+      <div className="mx-auto grid max-w-6xl gap-6 md:grid-cols-2">
         {quoteIds.map((id, i) => (
           <Reveal key={id} delay={i * 0.08}>
             <div className="flex h-full overflow-hidden rounded-2xl">

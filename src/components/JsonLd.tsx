@@ -12,7 +12,7 @@ const OFFERS = [
 const FAQS = [
   {
     q: "How can you deliver in 72 hours?",
-    a: "AI handles the heavy lifting (drafts, variations, boilerplate). A human designer perfects every pixel and word. You get agency quality at startup speed.",
+    a: "A tight process, and one project at a time. A 10-minute brief gives me everything I need, there's no committee to wait on and no back-and-forth between three departments. You get agency quality without the agency overhead.",
   },
   {
     q: "Do I own the website?",
@@ -46,7 +46,7 @@ export default function JsonLd() {
         name: "think.studio",
         url: SITE_URL,
         description:
-          "Conversion-engineered websites designed, written and shipped in 72 hours. Built with AI, perfected by a human.",
+          "Conversion-engineered websites designed, written and shipped in 72 hours. Custom-built for your business, perfected by hand.",
         areaServed: ["US", "GB", "CA", "AU"],
         priceRange: "$497-$1997",
         makesOffer: OFFERS.map((offer) => ({

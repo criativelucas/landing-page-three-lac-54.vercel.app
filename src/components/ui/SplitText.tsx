@@ -36,7 +36,7 @@ export default function SplitText({
       {words.map((word, i) => (
         <span key={`${word}-${i}`} className="inline-block overflow-hidden align-bottom" aria-hidden>
           <motion.span
-            className="inline-block"
+            className="js-reveal inline-block"
             variants={{
               hidden: { y: "110%", rotate: 4 },
               visible: { y: "0%", rotate: 0 },

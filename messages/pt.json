@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Sites Que Pensam | Sites com IA em 72 Horas",
-    "description": "Sites projetados para converter, desenhados, escritos e entregues em 72 horas. Feitos com IA. Aperfeiçoados por um humano."
+    "title": "Sites Que Pensam | Seu Site No Ar em 72 Horas",
+    "description": "Sites projetados para converter, desenhados, escritos e entregues em 72 horas. Feitos sob medida pro seu negócio. Sem template, sem espera de agência."
   },
   "nav": {
     "work": "Portfólio",
@@ -13,10 +13,9 @@
   },
   "hero": {
     "dragToRotate": "↔ ARRASTE PARA GIRAR",
-    "badge": "⚡ ENTREGA MÉDIA: 3 DIAS",
-    "eyebrow": "ESTÚDIO WEB COM IA",
+    "eyebrow": "ESTÚDIO WEB FOCADO EM CONVERSÃO",
     "headline": "Sites que pensam.",
-    "description": "Sites projetados para converter, desenhados, escritos e entregues em <strong>72 horas</strong>. Feitos com IA. Aperfeiçoados por um humano.",
+    "description": "Sites projetados para converter, desenhados, escritos e entregues em <strong>72 horas</strong>. Feitos sob medida pro seu negócio. Aperfeiçoados à mão.",
     "primaryCta": "Peça seu site em 72h",
     "secondaryCta": "Ver os trabalhos",
     "microcopy": "Sem necessidade de ligação para um orçamento. Resposta em até 2 horas, no mesmo dia."
@@ -94,7 +93,7 @@
       "build": {
         "title": "Construção",
         "when": "Dia 1-2",
-        "text": "Design e copy acelerados por IA, refinados à mão. Você recebe um link de preview privado."
+        "text": "Seu design e seu texto, construídos a partir do briefing e refinados à mão. Você recebe um link de preview privado."
       },
       "launch": {
         "title": "Lançamento",
@@ -107,13 +106,22 @@
   "work": {
     "heading": "Feito pra converter. Desenhado pra impressionar.",
     "featured": {
-      "ariaLabel": "Fotógrafo Efraim Gomes: ver site no ar (abre em nova aba)",
-      "heroAlt": "Site do fotógrafo Efraim Gomes, versão desktop",
       "mobileLabel": "MOBILE",
-      "mobileAlt": "Site do fotógrafo Efraim Gomes, versão mobile",
-      "niche": "Fotógrafo: Efraim Gomes",
-      "caption": "Projeto real de cliente, com galeria em masonry, parallax e lightbox",
-      "viewSite": "Ver site ↗"
+      "viewSite": "Ver site ↗",
+      "duoclinic": {
+        "ariaLabel": "Duo Clinic: ver site no ar (abre em nova aba)",
+        "heroAlt": "Site da Duo Clinic, versão desktop",
+        "mobileAlt": "Site da Duo Clinic, versão mobile",
+        "niche": "Clínica Médica: Duo Clinic",
+        "caption": "Projeto real de cliente, com agendamento direto pelo WhatsApp"
+      },
+      "efraim": {
+        "ariaLabel": "Fotógrafo Efraim Gomes: ver site no ar (abre em nova aba)",
+        "heroAlt": "Site do fotógrafo Efraim Gomes, versão desktop",
+        "mobileAlt": "Site do fotógrafo Efraim Gomes, versão mobile",
+        "niche": "Fotógrafo: Efraim Gomes",
+        "caption": "Projeto real de cliente, com galeria em masonry, parallax e lightbox"
+      }
     },
     "conceptTag": "CONCEITO",
     "typicalForNiche": "típico para este nicho",
@@ -164,7 +172,7 @@
     "items": {
       "delivery": {
         "q": "Como vocês entregam em 72 horas?",
-        "a": "A IA cuida do trabalho pesado (rascunhos, variações, estrutura). Um designer humano aperfeiçoa cada pixel e cada palavra. Você tem qualidade de agência na velocidade de startup."
+        "a": "Processo enxuto e um projeto por vez. Um briefing de 10 minutos me dá tudo que preciso, não tem comitê pra esperar nem vai e volta entre três departamentos. Você tem qualidade de agência sem o peso de uma agência."
       },
       "ownership": {
         "q": "O site é meu?",
@@ -190,27 +198,11 @@
   },
   "finalCta": {
     "heading": "Os sites dos seus concorrentes foram feitos na década passada.<accent>O seu estreia essa semana.</accent>",
-    "sending": "Enviando…",
-    "submit": "Pedir meu orçamento grátis →",
-    "whatsappMessage": "Oi! Acabei de pedir um orçamento no seu site.",
-    "success": {
-      "title": "Você está dentro.",
-      "body": "Respondemos em até 2 horas com os próximos passos. Sem necessidade de ligação para começar.",
-      "instantPrompt": "Prefere uma resposta na hora?",
-      "whatsappAriaLabel": "Conversar no WhatsApp (abre em nova aba)",
-      "whatsappCta": "Conversar no WhatsApp"
-    },
-    "fields": {
-      "name": "Nome",
-      "email": "E-mail",
-      "website": "Seu site atual (opcional)"
-    },
-    "errors": {
-      "missingFields": "Nome e e-mail são obrigatórios.",
-      "invalidEmail": "Digite um e-mail válido.",
-      "success": "Obrigado! Responderemos em até 2 horas."
-    },
-    "footnote": "Resposta em até 2 horas · Sem spam, sem pressão · {count} vagas restantes este mês"
+    "subheading": "Me manda uma mensagem agora. Respondo pessoalmente, em até 2 horas.",
+    "whatsappMessage": "Oi! Vi seu site e quero um orçamento.",
+    "whatsappCta": "Falar no WhatsApp",
+    "whatsappAriaLabel": "Falar no WhatsApp (abre em nova aba)",
+    "footnote": "Resposta em até 2 horas · Sem compromisso, sem pressão · {count} vagas restantes este mês"
   },
   "footer": {
     "tagline": "Feito em 72 horas. Por nós, obviamente."
@@ -226,16 +218,101 @@
     "process": "Processo",
     "work": "Portfólio",
     "faq": "FAQ",
-    "quote": "Orçamento"
-  },
-  "nowWidget": {
-    "building": "Construindo agora:",
-    "lastLaunch": "Último lançamento:",
-    "availability": "Disponibilidade:"
+    "quote": "Orçamento",
+    "founder": "Fundador"
   },
   "founder": {
-    "heading": "O humano por trás da IA.",
-    "body": "Eu sou o Lucas. Uso IA para o trabalho pesado para poder focar em aperfeiçoar seu design e copy. Você tem qualidade de agência sem os custos de uma.",
-    "commitment": "Meu compromisso: respostas no mesmo dia, sem enrolação."
+    "heading": "A pessoa por trás do seu site.",
+    "body": "Eu sou o Lucas. Construo cada site pessoalmente, do início ao fim. Você fala direto comigo, nunca com um gerente de contas. É por isso que seu site fica pronto em dias, não em meses, e é por isso que ele tem a cara do seu negócio e de mais ninguém.",
+    "commitment": "Meu compromisso: respostas no mesmo dia, sem enrolação.",
+    "photoAlt": "Lucas, fundador da think.studio, segurando um cristal verde brilhante"
+  },
+  "pitch": {
+    "meta": {
+      "title": "{client} × think.studio"
+    },
+    "cover": {
+      "defaultClient": "Seu negócio",
+      "headline": "Um site que agenda clientes. <accent>No ar em 72 horas.</accent>",
+      "hint": "role ↓"
+    },
+    "diagnosis": {
+      "eyebrow": "ONDE VOCÊ ESTÁ HOJE",
+      "heading": "Este é o seu site, num celular, hoje de manhã.",
+      "chip1": "Botão de agendar: escondido abaixo da dobra no celular",
+      "chip2": "Carregamento: {load}s — metade dos visitantes desiste aos 3s",
+      "chip3": "Nenhuma ação clara para quem chega pela primeira vez",
+      "note": "Nada disso é sobre estética. É sobre o momento em que alguém decide agendar — e não encontra onde.",
+      "placeholder": "screenshot do site atual — adicione ?shot=arquivo.png"
+    },
+    "cost": {
+      "eyebrow": "O QUE ISSO ESTÁ CUSTANDO",
+      "heading": "{reviews} avaliações com {stars}★ — e um site que deixa vazar.",
+      "body": "Todo mês, pessoas encontram suas avaliações, abrem seu site… e uma página lenta perde metade delas antes de terminar de carregar.",
+      "math": "2 agendamentos perdidos/mês × ticket médio de {ticket}",
+      "result": "≈ {yearly}/ano — invisível, todo ano",
+      "note": "Conta conservadora de propósito. Você nunca vê essas pessoas desistindo — é exatamente isso que sai caro."
+    },
+    "compare": {
+      "eyebrow": "COMO FICA QUANDO FUNCIONA",
+      "heading": "O seu seria este — com os seus serviços, as suas fotos, a sua voz.",
+      "before": "HOJE",
+      "after": "DAQUI A 72H",
+      "point1": "Agendamento é a primeira coisa que aparece",
+      "point2": "Carrega em menos de um segundo",
+      "point3": "Cada seção empurra para uma única ação",
+      "demoCta": "Abrir demo ao vivo ↗"
+    },
+    "process": {
+      "eyebrow": "COMO FUNCIONA",
+      "step1Title": "Briefing",
+      "step1Body": "Um formulário de 10 minutos. É tudo que preciso de você.",
+      "step2Title": "Construção",
+      "step2Body": "72 horas. Você recebe um link de preview privado.",
+      "step3Title": "Lançamento",
+      "step3Body": "Você aprova — e vai ao ar.",
+      "highlight": "Você aprova tudo <accent>antes da publicação</accent>."
+    },
+    "founding": {
+      "eyebrow": "POR QUE ESTA OFERTA EXISTE",
+      "heading": "Estou montando meu portfólio no nicho: <accent>5 clientes fundadores</accent>, projeto completo, preço de fundador.",
+      "trade": "A troca: um depoimento em vídeo de 30 segundos quando o site estiver no ar, funcionando.",
+      "slots": "{taken} de 5 vagas preenchidas"
+    },
+    "proof": {
+      "eyebrow": "PROVA",
+      "heading": "Projetos no ar. Explore depois da nossa conversa.",
+      "case1Niche": "Clínica médica",
+      "case1Name": "Duo Clinic",
+      "case2Niche": "Fotógrafo",
+      "case2Name": "Efraim Gomes",
+      "visit": "Visitar ↗"
+    },
+    "stack": {
+      "eyebrow": "TUDO INCLUÍDO",
+      "heading": "Feito por completo, de ponta a ponta.",
+      "i1": "Design sob medida — sem template",
+      "i2": "Textos inclusos — escritos para agendar, não para decorar",
+      "i3": "Mobile-first · SSL · carrega em menos de 1 segundo",
+      "i4": "Agendamento em destaque · Perfil da Empresa no Google vinculado",
+      "i5": "Analytics · SEO básico · 30 dias de hospedagem",
+      "i6": "2 rodadas de revisão · você é dono de 100% de tudo",
+      "note": "Nada para contratar à parte. Nada extra para comprar."
+    },
+    "invest": {
+      "eyebrow": "INVESTIMENTO",
+      "anchor": "Agências cobram <strike>R$ 6.000–15.000</strike> por isso, em 4–8 semanas.",
+      "standard": "Entrega em 72 horas úteis",
+      "price": "R$ 1.997",
+      "priceNote": "valor único · Pix ou cartão",
+      "risk": "<accent>50% para reservar</accent> sua vaga de produção + 50% só na aprovação final — nada vai ao ar sem o seu ok no preview.",
+      "guarantee": "No ar em 72h úteis ou 20% de desconto · Care Plan opcional a partir de R$ 197/mês"
+    },
+    "next": {
+      "heading": "Bora?",
+      "body": "A única coisa que acontece hoje: eu te mando o formulário de briefing — 10 minutos, na hora que for melhor.",
+      "live": "Seu site no ar {day}.",
+      "defaultDay": "quinta-feira"
+    }
   }
 }
