@@ -25,18 +25,51 @@
   --font-pixel: var(--font-mono-pixel);
 }
 
-html {
+/* Lenis owns smooth scrolling while it's mounted (it adds .lenis to <html>), and
+   CSS smooth scrolling fights it, breaking anchor jumps. So only fall back to
+   CSS smooth when Lenis is absent, and never under reduced motion. */
+html:not(.lenis) {
   scroll-behavior: smooth;
+}
+
+/* /pitch presents as a slide deck: the document scroll snaps slide-by-slide.
+   Scoped with :has so no other route is affected; Lenis skips /pitch entirely
+   (see SmoothScroll) because it animates scrollTop and fights mandatory snap.
+   scroll-behavior:smooth must go back to auto here for the same reason — the
+   snap animation is already smooth natively, and layering CSS smooth scrolling
+   on top of mandatory snap leaves the scroller stuck between snap points. */
+html:has([data-pitch-root]) {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: auto;
 }
 
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
   }
+  /* Ambient background video is decoration with no informational content, so
+     freeze it and let the poster stand in. */
+  .video-backdrop {
+    display: none;
+  }
 }
 
 body {
   font-family: var(--font-body), Arial, Helvetica, sans-serif;
+}
+
+/* Entrance animations (Reveal, SplitText, FloatingIcon) serialise their hidden
+   state as inline styles into the server HTML and need JS + IntersectionObserver
+   to play. On a phone that leaves the content invisible until a heavy bundle
+   hydrates, and invisible permanently if it never does. Below md the entrance is
+   dropped: the content paints as sent, no JS involved. A stylesheet !important
+   outranks motion's inline styles, so this pins the resting state without having
+   to thread a breakpoint through every component. */
+@media (max-width: 767px) {
+  .js-reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
 }
 
 :focus-visible {
